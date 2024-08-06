@@ -74,34 +74,6 @@ struct ContentView: View {
         }
     }
 
-    //  This was my attempt at turning the .alert into a ternary that swift hated. Might have to rearrange the reference to askQuestion and resetGame.
-    // tries < 8 ? .alert(scoreTitle, isPresented: $showingScore)() : Button("Try Again? Your final score was \(score)", action: resetGame)()
-    
-    // I turned the code commented out below into ternary operators instead of if-else statements.
-    
-    // I did get help for the following ternary.
-    //score += number == correctAnswer ? 1 : 0
-    //I figured it wasnt part of the assignment so no penalty for assistance.
-    
-   
-    //   func flagTapped(_ number: Int) {
-
-    //   tries += 1
-    //                    scoreTitle = "Correct! You know your flags!"
-    //
-    //            } else {
-    //
-    //                    scoreTitle = "Wrong. That's the flag of \(countries[number])."
-    
-    //        if number == correctAnswer {
-    //            score += 1
-    //        } else {
-    //        }
-   
-    //                if tries > 8 {
-    //                    resetGame()
-    //    }
-
     func flagTapped(_ number: Int) {
         
         tries += 1
